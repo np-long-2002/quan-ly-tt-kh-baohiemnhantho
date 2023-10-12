@@ -23,8 +23,20 @@ namespace BaoHiemNhanTho
             var collection = database.GetCollection<KhachHang>("kh");
             var filter = Builders<KhachHang>.Filter.Empty;
             var customer = collection.Find(x => x.MaKhachHang == maKH).FirstOrDefault();
-            var bindingList1 = new BindingList<NhanVien>(customer.NhanVien).ToList();
-            dataGridView1.DataSource = bindingList1;
+            if (customer != null && customer.NhanVien != null && customer.NhanVien.Any()) 
+            {
+                var bindingList1 = new BindingList<NhanVien>(customer.NhanVien).ToList();
+                dataGridView1.DataSource = bindingList1;
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy thông tin khách hàng hoặc danh sách nhân viên.");
+                Form4 form4 = new Form4(maKH);
+                form4.ShowDialog();
+                var bindingList1 = new BindingList<NhanVien>(customer.NhanVien).ToList();
+                dataGridView1.DataSource = bindingList1;
+            }
+                
         }
         public Form2(string maKH)
         {

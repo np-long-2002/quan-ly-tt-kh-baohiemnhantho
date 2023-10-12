@@ -108,3 +108,5 @@ D:\NoSQL\quan-ly-tt-kh-baohiemnhantho\BaoHiemNhanTho\obj\Debug\BaoHiemNhanTho.cs
 D:\NoSQL\quan-ly-tt-kh-baohiemnhantho\BaoHiemNhanTho\obj\Debug\BaoHiemNhanTho.csproj.CopyComplete
 D:\NoSQL\quan-ly-tt-kh-baohiemnhantho\BaoHiemNhanTho\obj\Debug\BaoHiemNhanTho.exe
 D:\NoSQL\quan-ly-tt-kh-baohiemnhantho\BaoHiemNhanTho\obj\Debug\BaoHiemNhanTho.pdb
+D:\NoSQL\quan-ly-tt-kh-baohiemnhantho\BaoHiemNhanTho\obj\Debug\BaoHiemNhanTho.Form4.resources
+D:\NoSQL\quan-ly-tt-kh-baohiemnhantho\BaoHiemNhanTho\obj\Debug\BaoHiemNhanTho.Form5.resources

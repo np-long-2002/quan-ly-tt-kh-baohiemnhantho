@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace BaoHiemNhanTho.Models
 {
+    [BsonIgnoreExtraElements]
     public class NhanVien
     {
         [BsonElement("maNhanVien")]
