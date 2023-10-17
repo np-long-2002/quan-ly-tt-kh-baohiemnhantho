@@ -1,0 +1,64 @@
+[{
+  "_id": {
+    "$oid": "65280e68e7260aa2e54017ea"
+  },
+  "maNhanVien": "001",
+  "tenNhanVien": "Phan Chí Toàn",
+  "soDienThoaiNhanVien": "0202030"
+},
+{
+  "_id": {
+    "$oid": "6528d13186fb8cf74f2ad829"
+  },
+  "maNhanVien": "002",
+  "tenNhanVien": "Nguyễn Văn A",
+  "soDienThoaiNhanVien": "0303030"
+},
+{
+  "_id": {
+    "$oid": "6528d14c86fb8cf74f2ad82a"
+  },
+  "maNhanVien": "003",
+  "tenNhanVien": "Trần Thị B",
+  "soDienThoaiNhanVien": "0404040"
+},
+{
+  "_id": {
+    "$oid": "6528d14c86fb8cf74f2ad82b"
+  },
+  "maNhanVien": "004",
+  "tenNhanVien": "Lê Văn C",
+  "soDienThoaiNhanVien": "0505050"
+},
+{
+  "_id": {
+    "$oid": "6528d15f86fb8cf74f2ad82c"
+  },
+  "maNhanVien": "005",
+  "tenNhanVien": "Nguyễn Văn B",
+  "soDienThoaiNhanVien": "0606060"
+},
+{
+  "_id": {
+    "$oid": "6528d17086fb8cf74f2ad82d"
+  },
+  "maNhanVien": "006",
+  "tenNhanVien": "Trần Thị C",
+  "soDienThoaiNhanVien": "0707070"
+},
+{
+  "_id": {
+    "$oid": "6528d17086fb8cf74f2ad82e"
+  },
+  "maNhanVien": "007",
+  "tenNhanVien": "Lê Văn D",
+  "soDienThoaiNhanVien": "0808080"
+},
+{
+  "_id": {
+    "$oid": "652b9f7a7b3c69afcbb10448"
+  },
+  "maNhanVien": "008",
+  "tenNhanVien": "test",
+  "soDienThoaiNhanVien": "123413241234"
+}]

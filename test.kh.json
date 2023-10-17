@@ -1,0 +1,159 @@
+[{
+  "_id": {
+    "$oid": "65202167eb92862f9dc8afca"
+  },
+  "maKhachHang": "1",
+  "tenKhachHang": "Nguyễn Phước Long",
+  "ngaySinh": {
+    "$date": "2002-09-24T00:00:00.000Z"
+  },
+  "diaChi": "1003",
+  "gioiTinh": "Nam",
+  "soDienThoaiKhachHang": "090310443",
+  "nhanVien": [
+    {
+      "maNhanVien": "001",
+      "tenNhanVien": "Phan Chí Toàn",
+      "soDienThoaiNhanVien": "0202030"
+    }
+  ],
+  "GoiBaoHiem": [
+    {
+      "maGoiBaoHiem": "bh001",
+      "tenGoiBaoHiem": "Bảo Hiểm",
+      "giaGoiBaoHiem": 500000,
+      "thoiGianBatDau": {
+        "$date": "2023-09-23T00:00:00.000Z"
+      },
+      "thoiGianKetThuc": {
+        "$date": "2023-12-30T00:00:00.000Z"
+      },
+      "moTaGoiBaoHiem": "Chưa Có"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "652a55b5b35ec876bb4aecb0"
+  },
+  "maKhachHang": "2",
+  "tenKhachHang": "Phan Chí Toàn",
+  "ngaySinh": {
+    "$date": "2002-09-24T00:00:00.000Z"
+  },
+  "diaChi": "Ai biết",
+  "gioiTinh": "Nam",
+  "soDienThoaiKhachHang": "1323123",
+  "nhanVien": [
+    {
+      "_id": {
+        "$oid": "6528d14c86fb8cf74f2ad82b"
+      },
+      "maNhanVien": "004",
+      "tenNhanVien": "Lê Văn C",
+      "soDienThoaiNhanVien": "0505050"
+    }
+  ],
+  "GoiBaoHiem": []
+},
+{
+  "_id": {
+    "$oid": "652a57f6c614d70dc76540b1"
+  },
+  "maKhachHang": "3",
+  "tenKhachHang": "Thảo",
+  "ngaySinh": {
+    "$date": "2002-09-04T00:00:00.000Z"
+  },
+  "diaChi": "Ai biết",
+  "gioiTinh": "Nữ",
+  "soDienThoaiKhachHang": "1323123123",
+  "nhanVien": [
+    {
+      "_id": {
+        "$oid": "6528d14c86fb8cf74f2ad82a"
+      },
+      "maNhanVien": "003",
+      "tenNhanVien": "Trần Thị B",
+      "soDienThoaiNhanVien": "0404040"
+    },
+    {
+      "_id": {
+        "$oid": "65280e68e7260aa2e54017ea"
+      },
+      "maNhanVien": "001",
+      "tenNhanVien": "Phan Chí Toàn",
+      "soDienThoaiNhanVien": "0202030"
+    },
+    {
+      "_id": {
+        "$oid": "6528d17086fb8cf74f2ad82d"
+      },
+      "maNhanVien": "006",
+      "tenNhanVien": "Trần Thị C",
+      "soDienThoaiNhanVien": "0707070"
+    }
+  ],
+  "GoiBaoHiem": [
+    {
+      "tenGoiBaoHiem": "Bảo Hiểm 3",
+      "maGoiBaoHiem": "bh003",
+      "giaGoiBaoHiem": 500000,
+      "moTaGoiBaoHiem": "Chưa Có",
+      "thoiGianBatDau": {
+        "$date": "2023-10-17T00:00:00.000Z"
+      },
+      "thoiGianKetThuc": {
+        "$date": "2023-10-17T00:00:00.000Z"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "652ca2b4311a985392ab4cd1"
+  },
+  "maKhachHang": "4",
+  "tenKhachHang": "Khang",
+  "ngaySinh": {
+    "$date": "2002-09-04T00:00:00.000Z"
+  },
+  "diaChi": "Ai biết",
+  "gioiTinh": "Nữ",
+  "soDienThoaiKhachHang": "1323123123",
+  "nhanVien": [
+    {
+      "_id": {
+        "$oid": "6528d17086fb8cf74f2ad82d"
+      },
+      "maNhanVien": "006",
+      "tenNhanVien": "Trần Thị C",
+      "soDienThoaiNhanVien": "0707070"
+    }
+  ],
+  "GoiBaoHiem": []
+},
+{
+  "_id": {
+    "$oid": "652e458edf6c2f10b4d3b766"
+  },
+  "maKhachHang": "5",
+  "tenKhachHang": "Phát",
+  "ngaySinh": {
+    "$date": "2023-02-09T00:00:00.000Z"
+  },
+  "diaChi": "HCM",
+  "gioiTinh": "Nam",
+  "soDienThoaiKhachHang": "4395324532",
+  "nhanVien": [
+    {
+      "_id": {
+        "$oid": "6528d14c86fb8cf74f2ad82b"
+      },
+      "maNhanVien": "004",
+      "tenNhanVien": "Lê Văn C",
+      "soDienThoaiNhanVien": "0505050"
+    }
+  ],
+  "GoiBaoHiem": []
+}]

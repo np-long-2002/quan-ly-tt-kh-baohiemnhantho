@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "652ccb0895c282ab2f9a3df1"
+  },
+  "maGoiBaoHiem": "bh001",
+  "tenGoiBaoHiem": "Bảo Hiểm",
+  "giaGoiBaoHiem": 500000,
+  "moTaGoiBaoHiem": "Chưa Có"
+},
+{
+  "_id": {
+    "$oid": "652ccb1895c282ab2f9a3df2"
+  },
+  "maGoiBaoHiem": "bh002",
+  "tenGoiBaoHiem": "Bảo Hiểm 2",
+  "giaGoiBaoHiem": 500000,
+  "moTaGoiBaoHiem": "Chưa Có"
+},
+{
+  "_id": {
+    "$oid": "652ccb2395c282ab2f9a3df3"
+  },
+  "maGoiBaoHiem": "bh003",
+  "tenGoiBaoHiem": "Bảo Hiểm 3",
+  "giaGoiBaoHiem": 500000,
+  "moTaGoiBaoHiem": "Chưa Có"
+}]
