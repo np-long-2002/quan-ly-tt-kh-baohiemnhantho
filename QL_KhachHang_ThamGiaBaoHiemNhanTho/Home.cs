@@ -5,7 +5,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -71,6 +73,7 @@ namespace QL_KhachHang_ThamGiaBaoHiemNhanTho
         {
             InitializeComponent();
             LoadDataKH();
+            
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -114,6 +117,27 @@ namespace QL_KhachHang_ThamGiaBaoHiemNhanTho
         {
             LoadDataKH();
             txtTK.Text = string.Empty;
+            string databaseName = "test"; 
+            string backupFolderPath = "D:\\NoSQL\\quan-ly-tt-kh-baohiemnhantho"; 
+            Process process = new Process();
+            process.StartInfo.FileName = "mongodump";
+            process.StartInfo.Arguments = $"--db {databaseName} --out {backupFolderPath}";
+            process.StartInfo.CreateNoWindow = true;
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.RedirectStandardOutput = true;
+            process.StartInfo.RedirectStandardError = true;
+
+            process.Start();
+            process.WaitForExit();
+
+            if (process.ExitCode == 0)
+            {
+                MessageBox.Show("Sao lưu hoàn tất.");
+            }
+            else
+            {
+                MessageBox.Show("Sao lưu không thành công.");
+            }
         }
     }
 }

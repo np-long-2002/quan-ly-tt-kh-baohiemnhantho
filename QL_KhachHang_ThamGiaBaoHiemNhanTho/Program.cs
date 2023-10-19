@@ -16,7 +16,7 @@ namespace QL_KhachHang_ThamGiaBaoHiemNhanTho
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            Application.Run(new fDangNhap());
         }
     }
 }

@@ -161,6 +161,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="fDangKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDangKy.Designer.cs">
+      <DependentUpon>fDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDangNhap.Designer.cs">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="fGoiBaoHiem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,8 +212,15 @@
     <Compile Include="Models\GoiBaoHiem.cs" />
     <Compile Include="Models\KhachHang.cs" />
     <Compile Include="Models\NhanVien.cs" />
+    <Compile Include="Models\taiKhoan.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fDangKy.resx">
+      <DependentUpon>fDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDangNhap.resx">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fGoiBaoHiem.resx">
       <DependentUpon>fGoiBaoHiem.cs</DependentUpon>
     </EmbeddedResource>

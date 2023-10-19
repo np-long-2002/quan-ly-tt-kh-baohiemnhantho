@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -17,12 +18,15 @@ namespace QL_KhachHang_ThamGiaBaoHiemNhanTho
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form currentChildForm;
-        public Main()
+        private bool isAdmin;
+        public Main(bool isAdmin)
         {
             InitializeComponent();
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, 60);
             panel_Left.Controls.Add(leftBorderBtn);
+            this.isAdmin = isAdmin;
+            CustomizeUI();
             //Form
             //this.Text = string.Empty;
             //this.ControlBox = false;
@@ -93,12 +97,6 @@ namespace QL_KhachHang_ThamGiaBaoHiemNhanTho
             childForm.Show();
             label_Title.Text = childForm.Text;
         }
-        private void Reset()
-        {
-            DisableButton();
-            leftBorderBtn.Visible = false;
-            label_Title.Text = "Quản Lý Thông Tin Khách Hàng Tham Gia Bảo Hiểm Nhân Thọ";
-        }
    
         private void iconHome_Click(object sender, EventArgs e)
         {
@@ -128,6 +126,77 @@ namespace QL_KhachHang_ThamGiaBaoHiemNhanTho
         {
             ActivateButton(sender, RGBColors.color4);
             OpenChildForm(new fThongKe());
+        }
+        private void CustomizeUI()
+        {
+            if (isAdmin)
+            {
+                // Cho phép truy cập vào tất cả các chức năng nếu là admin
+                // Hiển thị các nút cho trang Nhân Viên và Gói Bảo Hiểm
+                iconEmp.Visible = true;
+                iconGBH.Visible = true;
+                iconButton2.Visible = true;
+                iconButton3.Visible = true;
+                iconButton1.Visible = true;
+            }
+            else
+            {
+                // Chỉ cho phép truy cập vào trang chủ và trang khách hàng nếu không phải admin
+                // Ẩn nút cho trang Nhân Viên và Gói Bảo Hiểm
+                iconEmp.Visible = false;
+                iconGBH.Visible = false;
+                iconButton1.Visible = false;
+                iconButton2.Visible = false;
+            }
+        }
+        private void LoginSuccess(bool isAdmin)
+        {
+            // Kiểm tra vai trò của người dùng và điều chỉnh quyền truy cập
+            if (isAdmin)
+            {
+                // Đây là tài khoản admin
+                // Cho phép truy cập vào tất cả các chức năng, bao gồm trang Nhân Viên và trang Gói Bảo Hiểm
+                ActivateButton(iconEmp, RGBColors.color2);
+                ActivateButton(iconGBH, RGBColors.color6);
+                OpenChildForm(new fNhanVien());
+            }
+            else
+            {
+                // Đây là tài khoản nhân viên hoặc người dùng khác
+                // Chỉ cho phép truy cập vào trang chủ và trang khách hàng
+                ActivateButton(iconHome, RGBColors.color1);
+                ActivateButton(iconCus, RGBColors.color3);
+                ActivateButton(iconButton3, RGBColors.color4);
+                OpenChildForm(new fKhachHang());
+                
+            }
+        }
+
+        private async void iconButton2_Click(object sender, EventArgs e)
+        {
+            string databaseName = "test"; 
+            string backupFolderPath = "D:\\NoSQL\\quan-ly-tt-kh-baohiemnhantho\\test";
+       
+            await Task.Run(() => RestoreMongoDB(backupFolderPath, databaseName));
+
+            MessageBox.Show("Phục hồi hoàn tất.");
+        }
+        private void RestoreMongoDB(string backupFolderPath, string databaseName)
+        {
+            Process process = new Process();
+            process.StartInfo.FileName = "mongorestore";
+            process.StartInfo.Arguments = $"--db {databaseName} {backupFolderPath}";
+            process.StartInfo.CreateNoWindow = true;
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.RedirectStandardOutput = true;
+            process.StartInfo.RedirectStandardError = true;
+            process.Start();
+            process.WaitForExit();
+        }
+
+        private void iconButton3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
