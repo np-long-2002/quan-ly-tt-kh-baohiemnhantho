@@ -1,0 +1,64 @@
+[{
+  "_id": {
+    "$oid": "6527fd46665c4c8572f92f1c"
+  },
+  "username": "toan",
+  "password": "123",
+  "Quyen": true
+},
+{
+  "_id": {
+    "$oid": "6530fff5f3c1d06d544402a1"
+  },
+  "username": "long",
+  "password": "123",
+  "Quyen": false
+},
+{
+  "_id": {
+    "$oid": "65311a88332ac8e81e7a4d03"
+  },
+  "username": "toanchi",
+  "password": "toanchi",
+  "Quyen": false
+},
+{
+  "_id": {
+    "$oid": "65311aae29017f2e5d40f765"
+  },
+  "username": "thucute",
+  "password": "123",
+  "Quyen": false
+},
+{
+  "_id": {
+    "$oid": "653129873a440401eb68e8ce"
+  },
+  "username": "1234",
+  "password": "123",
+  "Quyen": false
+},
+{
+  "_id": {
+    "$oid": "653158a3cc6feeb5040f5f05"
+  },
+  "username": "testnv",
+  "password": "123",
+  "Quyen": false
+},
+{
+  "_id": {
+    "$oid": "653b307aaf4140386dd87001"
+  },
+  "username": "thao",
+  "password": "123",
+  "Quyen": false
+},
+{
+  "_id": {
+    "$oid": "653b32559152e7d67b01380e"
+  },
+  "username": "thooo",
+  "password": "123",
+  "Quyen": false
+}]
